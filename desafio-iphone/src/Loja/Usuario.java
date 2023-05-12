@@ -3,6 +3,7 @@ package Loja;
 import iphone.internet.NavegadorInternet;
 import iphone.musica.ReprodutorMusical;
 import iphone.smarthphone.Iphone;
+import iphone.telefone.AparelhoTelefonico;
 
 public class Usuario {
     public static void main(String[] args) {
@@ -22,7 +23,9 @@ public class Usuario {
 
        System.out.println("--------------------------------------");
 
-       
-       
+       AparelhoTelefonico aparelho = iphone;
+       aparelho.ligar();
+       aparelho.atender(false);
+       //aparelho.iniciarCorreioVoz();
     }
 }
